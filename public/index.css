@@ -1,0 +1,37 @@
+
+.body-bg{
+    background-color: #191d28;
+}
+
+.color-customblue{
+    color: #5dc7c2;
+}
+
+.background{
+    background-color: #2e3241;
+}
+
+.border-custom{
+    border-color: #5dc7c2;
+}
+
+.font-family{
+    font-family: Oswald,sans-serif;
+}
+
+.telegram{
+    background-color: #3dc6c1;
+}
+
+.border-spacing{
+    border-collapse:separate;
+    border-spacing: 20px;
+}
+
+td{
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+  

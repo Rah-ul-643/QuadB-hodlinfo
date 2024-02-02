@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./output.css">
+</head>
+
+<body class="body-bg overflow-x-hidden">
+    <div id="loader" class="body-bg fixed top-0 h-full w-full flex justify-center items-center z-10">
+        <img class="" src="https://echallan.tspolice.gov.in/publicview/images/demo_wait.gif" alt="loader gif"> 
+    </div>
+    <nav class="flex-col flex justify-evenly items-center my-8 md:flex-row mx-4">
+        <a href="" class=" w-3/4 md:w-1/3 ">
+            <img src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png" class="w-3/4 m-auto" alt="">
+        </a>
+        <div class="flex justify-center items-center w-3/4 md:w-1/3">
+            <button class="text-white text-xs md:text-lg rounded-lg m-2 px-4 py-1 background">INR ▼</button>
+            <button class="text-white  text-xs md:text-lg rounded-lg m-2 px-4 py-1 background">BTC ▼</button>
+            <a href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn" target="_blank">
+                <button class="text-white  text-xs md:text-lg rounded-lg m-2 px-4 py-1 background">BUY BTC</button>
+            </a>
+        </div>
+        <div class="flex justify-center items-center w-3/4 md:w-1/3">
+            <div id="timer" class="color-customblue rounded-full border-4 border-custom p-1">60</div>
+            <div class="text-sm telegram rounded-lg px-4 py-2 m-4 text-white md:xl "><a href="https://hodlinfo.com/connect/telegram">Connect Telegram</a></div>
+            <div class="rounded-2xl background"><span class="rounded-full" style="background-color: #5dc7c2;"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex justify-around items-center p-24 mx-4" style="padding: 10px 0px;">
+        <div class="text-center">
+            <div class="text-lg sm:text-xl color-customblue md:text-4xl ">0.07 %</div>
+            <div class="text-white opacity-40">5 Mins</div>
+        </div>
+        <div class="text-center">
+            <div class="text-lg sm:text-xl color-customblue md:text-4xl ">0.55 %</div>
+            <div class="text-white opacity-40">1 Hour</div>
+        </div>
+        <div style="max-width: 40%;">
+            <div class="text-center font-32">
+                <div class="text-xs sm:text-2xl md:text-3xl text-white opacity-40"><span>Best Price to Trade</span></div>
+                <div id="averagePrice" class="text-xl sm:text-3xl text-white font-semibold m-4  md:text-6xl lg:text-7xl " style="padding-bottom: 10px;"></div>
+                <div class="text-xs text-white opacity-40">Average BTC/INR net price including commission</div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="text-lg sm:text-xl color-customblue md:text-4xl ">3.38 %</div>
+            <div class="text-white opacity-40">1 Day</div>
+        </div>
+        <div class="text-center">
+            <div class="text-lg sm:text-xl color-customblue md:text-4xl ">5.67 %</div>
+            <div class="text-white opacity-40">7 Days</div>
+        </div>
+    </div>
+
+    <div class=" overflow-x-scroll ">
+        <table id="table" class="text-white w-full p-4 box-border text-center border-spacing min-w-max" >
+                <thead>
+                    <tr class="opacity-40 text-xs md:text-2xl">
+                        <th>
+                            <h4><span class="cursor-pointer">#</span></h4>
+                        </th>
+                        <th>
+                            <h4><span class="cursor-pointer">Platform</span></h4>
+                        </th>
+                        <th>
+                            <h4><span class="cursor-pointer">Last Traded Price</span></h4>
+                        </th>
+                        <th>
+                            <h4><span class="cursor-pointer">Buy / Sell Price</span></h4>
+                        </th>
+                        <th>
+                            <h4><span class="cursor-pointer">Difference</span></h4>
+                        </th>
+                        <th>
+                            <h4><span class="cursor-pointer">Savings</span></h4>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            
+        </table>
+    </div>
+
+    <footer>
+        <hr class="h-2 text-white">
+        <div class="flex items-center text-xs md:text-sm text-white opacity-40 m-2">
+            <div class="flex justify-items-start items-center w-1/3">
+                <div class="mx-2">Copyright @ 2019</div>
+                <div class="mx-2">Hodlinfo.com</div>
+            </div>
+            <div class="w-2/3 text-right">Support</div>
+        </div>
+        <hr class="h-2 text-white">
+    </footer>
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
